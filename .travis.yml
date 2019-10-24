@@ -9,12 +9,9 @@ python:
        - "2.7"
 matrix:
   include:
-  - name: "Trusty indigo"
-    dist: trusty
-    env: ROS_DISTRO=indigo
-  - name: "Xenial kinetic"
-    dist: xenial
-    env: ROS_DISTRO=kinetic
+  - name: "Melodic Morenia"
+    dist: melodic
+    env: ROS_DISTRO=melodic
 
 # Configuration variables. All variables are global now, but this can be used to
 # trigger a build matrix for different ROS distributions if desired.
@@ -84,7 +81,7 @@ script:
   # Run the tests, ensuring the path is set correctly.
   - source devel/setup.bash
   - catkin_make run_tests && catkin_test_results
-  - $(pwd)
+  - cd $(pwd)
   - python test_practice.py
   #- roscore
   - python simpleSMACHs/test_gateMachine.py
