@@ -1,8 +1,6 @@
 language: python
 python:
-
-        "3.4"
-        "3.5"
-        "3.6"
+       - "2.7"
+       
 script:
-        - python simpleSMACHs/test_gateMachine.py       
+        python test_practice.py       
