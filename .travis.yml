@@ -3,6 +3,6 @@ python:
        - "2.7"
        
 script:
-        python test_practice.py
-        roscore
-        python simpleSMACHs/test_gateMachine.py       
+        - " python test_practice.py"
+        - "roscore"
+        - "python simpleSMACHs/test_gateMachine.py"
