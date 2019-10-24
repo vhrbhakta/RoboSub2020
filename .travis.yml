@@ -3,4 +3,4 @@ python:
        - "2.7"
        
 script:
-        ./test_practice.py       
+        python test_practice.py       
