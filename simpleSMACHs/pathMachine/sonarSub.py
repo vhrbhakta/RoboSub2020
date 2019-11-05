@@ -11,6 +11,7 @@ class sonarSub:
         
 
     def getPing(self):
+        self.SonarListener()
         return self.ping
 
     def callback(self, data):
