@@ -1,9 +1,16 @@
+# work on navigation stuff
+#unit tests for navigation. numbers that are inputted should receive a specific number outputted.
+#make a list of python functions we need to be implemented.
+# api should be organized into modules. Be specific, what files. unittest for api and navigation
+
+
+
 import rospy
 import smach
 import random
-# import depthPub
-# import depthSub
-# import sonarSub
+from depthPub import depthPub
+from depthSub import depthSub
+from sonarSub import sonarSub
 
 class SEARCHPATH(smach.State):
     def __init__(self):
@@ -98,10 +105,10 @@ def main():
 
     sm = smach.StateMachine(outcomes=['object_detected', 'surfaced'])
 
-    # depth_sub = depthSub()
-    # depth_pub = depthPub(10)
-    # sonar_sub = sonarSub()
-    # depth_pub.talker()
+    depth_sub = depthSub()
+    depth_pub = depthPub(10)
+    sonar_sub = sonarSub()
+    depth_pub.talker()
 
     sm.userdata.sm_distance = 15
     sm.userdata.sm_depth =10
