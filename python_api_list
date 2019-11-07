@@ -1,0 +1,26 @@
+DVL{
+    Waypoints,
+    Velocity
+
+}
+Sonar{
+    Distances,
+    Location of objects
+
+}
+Hydrophone{
+
+    Heading angle of tasks
+    
+        
+}
+IMU{
+    Angle data,
+
+}
+Thrusters{
+    no data
+}
+Servo Arms{
+
+}

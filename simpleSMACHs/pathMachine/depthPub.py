@@ -1,7 +1,7 @@
 import rospy
 from std_msgs.msg import Int64
 
-class depthSub:
+class depthPub:
     
     def __init__(self, myDepth):
         self.setDepth(myDepth)
