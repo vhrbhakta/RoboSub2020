@@ -1,7 +1,6 @@
 DVL{
     Waypoints,
-    Velocity
-
+    Velocity -> get_current_velocity()
 }
 Sonar{
     Distances,
@@ -10,9 +9,7 @@ Sonar{
 }
 Hydrophone{
 
-    Heading angle of tasks
-    
-        
+    Heading angle of tasks 
 }
 IMU{
     Angle data,
