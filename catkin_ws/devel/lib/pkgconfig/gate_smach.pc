@@ -1,0 +1,8 @@
+prefix=/home/vhrbhakta/RS2020/catkin_ws/devel
+
+Name: gate_smach
+Description: Description of gate_smach
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/vhrbhakta/RS2020/catkin_ws/devel/lib 
+Requires: message_generation std_msgs

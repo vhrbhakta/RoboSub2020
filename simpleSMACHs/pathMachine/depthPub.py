@@ -19,7 +19,7 @@ class depthPub:
         rate = rospy.Rate(10)
 
         pub.publish(self.getDepth())
-        rospy.loginfo('Current Depth: %d' %self.getDepth() )
+        rospy.loginfo('Current Depth: %d' %self.getDepth())
         rate.sleep()
 
 

@@ -110,8 +110,12 @@ def main():
     sonar_sub = sonarSub()
     depth_pub.talker()
 
+
     sm.userdata.sm_distance = 15
     sm.userdata.sm_depth =10
+    sm.userdata.sm_depth_sub = depth_sub
+    sm.userdata.sm_depth_pub = depth_pub
+    
     sm.userdata.sm_sonarDetection = 0
     sm.userdata.sm_path_miss = 0
     

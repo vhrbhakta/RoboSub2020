@@ -1,23 +1,29 @@
 DVL{
     Waypoints,
-    Velocity -> get_current_velocity()
+    Velocity -> get_current_velocity() //what is the current velocity
 }
 Sonar{
-    Distances,
-    Location of objects
-
+    Distances, //what is the distance to the wall?
+    Location of objects //is there a disturbance?
 }
 Hydrophone{
 
-    Heading angle of tasks 
-}
-IMU{
-    Angle data,
+    Heading angle of pingers. // dict {frequency: angle} , returns a dictionary the keys will the frequency of the pinger, value will be the angle to the pinger. The length of the dictionary is the number of pingers detected.
 
 }
-Thrusters{
-    no data
-}
+
+
 Servo Arms{
+    
+}
 
+Stabilization{
+
+    IMU{
+        Angle data,
+
+    }
+    Thrusters{
+        no data
+    }
 }
